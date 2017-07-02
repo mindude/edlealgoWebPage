@@ -30,6 +30,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/language', {
+        templateUrl: 'views/language.html',
+        controller: 'LanguageCtrl',
+        controllerAs: 'language'
+      })
       .otherwise({
         redirectTo: '/'
       });
