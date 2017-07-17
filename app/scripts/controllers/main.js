@@ -8,7 +8,7 @@
  * Controller of the edlealgoWpApp
  */
 angular.module('edlealgoWpApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($location) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
