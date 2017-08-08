@@ -22,9 +22,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-app="edlealgoWpApp" ng-controller="HeaderctrlCtrl">
-      <div class="header" id="head" style="display:{isVisible}">
-        <div class="navbar navbar-default" role="navigation" style="background-color:#cc3300;">
+    <div ng-app="edlealgoWpApp">
+      <div class="header" id="head" ng-controller="HeaderctrlCtrl" style="display:{{headerDisplay}}">
+        <div class="navbar navbar-default" role="navigation" style="background-color:#846541;">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
               <ul class="nav navbar-nav">
-                <li><a href="#!/" style="color:white;">Home</a></li>
+                <li><a href={{homeURL}} style="color:white;">{{homeName}}</a></li>
                 <li><a ng-href="#!/about" style="color:white;">About</a></li>
                 <li><a ng-href="#!/" style="color:white;">Contact</a></li>
               </ul>
@@ -79,18 +79,9 @@
        ga('send', 'pageview');
     </script>
 
+
     <script type="text/javascript">
-
-        var headerDisplay = document.getElementById('head');
-
-
-
-        if(window.location.hash.indexOf("language") > -1) {
-          headerDisplay.style.display = 'none';
-        }
-
-
-      ;
+      edlealgoWpApp.factory('')
     </script>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -113,6 +104,8 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/language.js"></script>
         <script src="scripts/controllers/header.js"></script>
+        <script src="scripts/controllers/mainenglish.js"></script>
+        <script src="scripts/controllers/main_espanol.js"></script>
         <!-- endbuild -->
 </body>
 </html>

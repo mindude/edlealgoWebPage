@@ -2,17 +2,16 @@
 
 /**
  * @ngdoc function
- * @name edlealgoWpApp.controller:MainCtrl
+ * @name edlealgoWpApp.controller:MainEspanolCtrl
  * @description
- * # MainCtrl
+ * # MainEspanolCtrl
  * Controller of the edlealgoWpApp
  */
 angular.module('edlealgoWpApp')
-  .controller('MainCtrl', function ($location, $rootScope) {
+  .controller('MainEspanolCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $rootScope.headerDisplay = 'block';
   });

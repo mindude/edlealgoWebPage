@@ -2,17 +2,16 @@
 
 /**
  * @ngdoc function
- * @name edlealgoWpApp.controller:MainCtrl
+ * @name edlealgoWpApp.controller:MainenglishCtrl
  * @description
- * # MainCtrl
+ * # MainenglishCtrl
  * Controller of the edlealgoWpApp
  */
 angular.module('edlealgoWpApp')
-  .controller('MainCtrl', function ($location, $rootScope) {
+  .controller('MainenglishCtrl', function ($scope, $location, $rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $rootScope.headerDisplay = 'block';
   });

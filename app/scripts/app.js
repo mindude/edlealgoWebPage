@@ -36,8 +36,17 @@ angular
         controller: 'LanguageCtrl',
         controllerAs: 'language'
       })
+      .when('/main_English', {
+        templateUrl: 'views/main_english.html',
+        controller: 'MainenglishCtrl',
+        controllerAs: 'mainEnglish'
+      })
+      .when('/main_Espanol', {
+        templateUrl: 'views/main_espanol.html',
+        controller: 'MainEspanolCtrl',
+        controllerAs: 'mainEspanol'
+      })
       .otherwise({
         redirectTo: '/'
       });
-
   });
