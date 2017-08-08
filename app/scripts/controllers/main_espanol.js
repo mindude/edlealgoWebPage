@@ -8,10 +8,11 @@
  * Controller of the edlealgoWpApp
  */
 angular.module('edlealgoWpApp')
-  .controller('MainEspanolCtrl', function () {
+  .controller('MainEspanolCtrl', function ($scope, $location, $rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+    $rootScope.configHeadFoot();
   });

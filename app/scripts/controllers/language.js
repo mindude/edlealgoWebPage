@@ -14,20 +14,14 @@ angular.module('edlealgoWpApp')
       'AngularJS',
       'Karma'
     ];
-    $rootScope.headerDisplay = 'none';
-    $rootScope.headerLanguage = 'none';
+
+    $rootScope.configHeadFoot();
 
     $scope.button_mexico = function(){
-      $rootScope.headerDisplay = 'block';
-      $rootScope.homeName = 'Inicio';
-      $rootScope.homeURL = '#!/main_Espanol';
       $location.path('/main_Espanol');
     };
 
     $scope.button_usa = function(){
-      $rootScope.headerDisplay = 'block';
-      $rootScope.homeName = 'Home';
-      $rootScope.homeURL = '#!/main_English';
       $location.path('/main_English');
     };
 

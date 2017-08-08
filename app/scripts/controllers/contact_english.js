@@ -2,17 +2,16 @@
 
 /**
  * @ngdoc function
- * @name edlealgoWpApp.controller:MainenglishCtrl
+ * @name edlealgoWpApp.controller:ContactEnglishCtrl
  * @description
- * # MainenglishCtrl
+ * # ContactEnglishCtrl
  * Controller of the edlealgoWpApp
  */
 angular.module('edlealgoWpApp')
-  .controller('MainenglishCtrl', function ($scope, $location, $rootScope) {
+  .controller('ContactEnglishCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $rootScope.configHeadFoot();
   });

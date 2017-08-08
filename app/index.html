@@ -22,10 +22,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-app="edlealgoWpApp">
       <div class="header" id="head" ng-controller="HeaderctrlCtrl" style="display:{{headerDisplay}}">
-        <div class="navbar navbar-default" role="navigation" style="background-color:#846541;">
-          <div class="container">
+        <div class="navbar navbar-default" role="navigation" style="background-color:#9f0f13;">
+          <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -34,27 +33,29 @@
                 <span class="icon-bar"></span>
               </button>
 
-              <a class="navbar-brand" href="#!/"style="color:white;">Edgar Leal</a>
+              <a class="navbar-brand" href={{homeURL}} style="color:white;">Edgar Leal</a>
             </div>
 
             <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
               <ul class="nav navbar-nav">
-                <li><a href={{homeURL}} style="color:white;">{{homeName}}</a></li>
-                <li><a ng-href="#!/about" style="color:white;">About</a></li>
-                <li><a ng-href="#!/" style="color:white;">Contact</a></li>
+                <li><a href={{homeURL}} style="color:#dddddd;">{{homeName}}</a></li>
+                <li><a ng-href={{portfolioURL}} style="color:#dddddd;">{{portfolioName}}</a></li>
+                <li><a ng-href={{resumeURL}} style="color:#dddddd;">{{resumeName}}</a></li>
+                <li><a ng-href={{aboutURL}} style="color:#dddddd;">{{aboutName}}</a></li>
+                <li><a ng-href={{contactURL}} style="color:#dddddd;">{{contactName}}</a></li>
+                <li><a ng-href={{languageURL}} style="color:#dddddd;">{{languageName}}</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
+    <div class={{container}}>
       <div ng-view=""></div>
     </div>
 
-    <div class="footer">
+    <div class="footer" style="background-color:{{colorFooter}};">
       <div class="container">
 
           <div class="col-md-5">
@@ -106,6 +107,14 @@
         <script src="scripts/controllers/header.js"></script>
         <script src="scripts/controllers/mainenglish.js"></script>
         <script src="scripts/controllers/main_espanol.js"></script>
+        <script src="scripts/controllers/portfolio_espanol.js"></script>
+        <script src="scripts/controllers/portfolio_english.js"></script>
+        <script src="scripts/controllers/resume_espanol.js"></script>
+        <script src="scripts/controllers/resume_english.js"></script>
+        <script src="scripts/controllers/about_espanol.js"></script>
+        <script src="scripts/controllers/about_english.js"></script>
+        <script src="scripts/controllers/contact_english.js"></script>
+        <script src="scripts/controllers/contact_espanol.js"></script>
         <!-- endbuild -->
 </body>
 </html>
